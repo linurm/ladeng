@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="enter_code_steps_referral">
+        <item>輸入你收到電子郵件裏的認證碼以繼續使用專業版!</item>
+        <item>沒收到認證碼信件? 請先檢查垃圾信件箱並確認寫入了正確的電子郵件地址。.</item>
+    </string-array>
+    <string-array name="enter_email_list">
+        <item>輸入電子郵件以授權這台設備使用你免費的Lantern專業版月份</item>
+        <item>我們會用電子郵件把授權碼寄給你。</item>
+    </string-array>
+    <string-array name="pro_features">
+        <item>更快速度</item>
+        <item>不限資料流量</item>
+        <item>對抗封鎖</item>
+        <item>可支援三組設備</item>
+    </string-array>
+    <string-array name="referral_promotion_list">
+        <item>如果某位朋友分享了他們的邀請碼給你，請在此輸入。完成付帳後可取得三個月免費lantern 專業版使用。</item>
+    </string-array>
+    <string-array name="referral_promotion_list_two_year">
+        <item>如果某位朋友分享了他們的邀請碼給你，請在此輸入。完成付帳後可取得三個月免費lantern 專業版使用。</item>
+    </string-array>
+</resources>

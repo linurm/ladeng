@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Налаштування</string>
+    <string name="app_name">Lantern</string>
+    <string name="cancel">Скасувати</string>
+    <string name="contact_option">"Зв'язок"</string>
+    <string name="install_update">Оновити</string>
+    <string name="item_preview_country">США</string>
+    <string name="language">Мова</string>
+    <string name="no">Ні</string>
+    <string name="quit_option">Вийти</string>
+    <string name="refresh">Оновити</string>
+    <string name="send_button">Надіслати</string>
+    <string name="share_email_native" />
+    <string name="yes">Так</string>
+</resources>

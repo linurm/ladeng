@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pro_features">
+        <item>Més velocitat</item>
+        <item>Dades sense límit</item>
+        <item>Resistència al bloqueig</item>
+        <item>Tres dispositius</item>
+    </string-array>
+</resources>

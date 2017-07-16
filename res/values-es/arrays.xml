@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="authorize_device_list">
+        <item>"El código de vinculación de su dispositivo se encuentra en la pantalla 'Autorizar dispositivo para Pro' en el dispositivo que quiera vincular."</item>
+    </string-array>
+    <string-array name="common_issue_list">
+        <item>No se puede acceder a sitios bloqueados</item>
+        <item>No se puede completar la compra</item>
+        <item>No se puede iniciar sesión</item>
+        <item>El indicador de cagar gira sin fin</item>
+        <item>Lento</item>
+        <item>Otro</item>
+    </string-array>
+    <string-array name="enter_code_steps_referral">
+        <item>¡Introduzca el código de verificación que recibió vía correo electrónico para continuar hacia Pro!</item>
+        <item>¿No recibió un código? Compruebe que no esté en su carpeta de spam y asegúrese de que introdujo correctamente su dirección de correo electrónico.</item>
+    </string-array>
+    <string-array name="enter_email_list">
+        <item>Introduzca su dirección de correo electrónico para autorizar este dispositivo a usar sus meses gratis de Lantern Pro</item>
+        <item>Le enviaremos un código de autorización por correo electrónico</item>
+    </string-array>
+    <string-array name="pro_features">
+        <item>Mayor velocidad</item>
+        <item>Datos ilimitados</item>
+        <item>Resistente al bloqueo</item>
+        <item>Tres dispositivos</item>
+    </string-array>
+    <string-array name="referral_promotion_list">
+        <item>Si un amigo compartío su código de referencia con usted, introduzca el código pare recibir un mes gratuito de Lantern Pro tras el registro</item>
+    </string-array>
+    <string-array name="referral_promotion_list_two_year">
+        <item>Si un amigo completó su código de referencia con usted, introduzca el código para recibir tres meses de Lantern Pro gratis tras el registro</item>
+    </string-array>
+</resources>

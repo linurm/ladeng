@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="common_issue_list">
+        <item>Kann nicht auf blockierte Seiten zugreifen</item>
+        <item>Kann Kauf nicht abschließen</item>
+        <item>Kann mich nicht anmelden</item>
+        <item>Spinner lädt endlos</item>
+        <item>Langsam</item>
+        <item>Anderes</item>
+    </string-array>
+</resources>

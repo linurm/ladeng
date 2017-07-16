@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="authorize_device_list">
+        <item>"Votre code de liaison d'appareil se trouve sur l'écran 'Autoriser l'appareil à la version Pro' sur l'appareil que vous souhaitez relier."</item>
+    </string-array>
+    <string-array name="common_issue_list">
+        <item>"Impossible d'accéder à des sites bloqués"</item>
+        <item>Impossible de conclure un achat</item>
+        <item>Impossible de se connecter</item>
+        <item>"Le chargement n'aboutit jamais"</item>
+        <item>Lent</item>
+        <item>Autre</item>
+    </string-array>
+    <string-array name="enter_code_steps_referral">
+        <item>Saisissez le code de vérification reçu par courriel afin de poursuivre vers la version Pro !</item>
+        <item>"Vous n'avez pas reçu de code ? Vérifiez votre dossier de pourriels et assurez-vous d'avoir bien saisi votre adresse courriel."</item>
+    </string-array>
+    <string-array name="enter_email_list">
+        <item>"Saisissez votre adresse courriel afin d'autoriser cet appareil à utiliser vos mois gratuits de Lantern Pro"</item>
+        <item>"Nous vous enverrons un code d'autorisation par courriel"</item>
+    </string-array>
+    <string-array name="pro_features">
+        <item>Vitesse accrue</item>
+        <item>Données illimitées</item>
+        <item>Résistant au blocage</item>
+        <item>Trois appareils</item>
+    </string-array>
+</resources>

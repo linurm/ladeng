@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/languagesView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:id="@id/titlebar_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" lantern:backgroundColor="@drawable/nav_background_white" lantern:titleText="@string/language" class="org.lantern.fragment.TitleBar" xmlns:lantern="http://schemas.android.com/apk/res-auto" />
+    <ListView android:id="@id/list" android:background="@color/card_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:layout_weight="1.0" android:layout_below="@id/titlebar_fragment" />
+</LinearLayout>

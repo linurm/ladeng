@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/referralView" android:background="@color/accent_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lantern="http://schemas.android.com/apk/res-auto">
+    <fragment android:id="@id/titlebar_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" lantern:backgroundColor="@drawable/nav_background_white" lantern:titleText="@string/referral_code" class="org.lantern.fragment.TitleBar" />
+    <fragment android:id="@id/user_form_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" lantern:sendBtnText="@string/apply_referral_code" lantern:formIcon="@drawable/star" lantern:formType="referral" lantern:formList="@array/referral_promotion_list" class="org.lantern.fragment.UserForm" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="enter_code_steps_referral">
+        <item>Pro hesabı için e-posta ile aldığınız doğrulama kodunu girin</item>
+        <item>Kodu almadınız mı? E-posta adresinizi doğru girdiğinize emin olun ve spam klasörünüze de bakın.</item>
+    </string-array>
+    <string-array name="enter_email_list">
+        <item>Hesabınızdaki ücretsiz Lantern Pro aylarınızı bu cihazda kullanmak için e-posta adresinizi girin</item>
+        <item>Doğrulama kodunu e-posta ile göndereceğiz</item>
+    </string-array>
+    <string-array name="pro_features">
+        <item>Daha Hızlı</item>
+        <item>Sınırsız Veri</item>
+        <item>Engellemelere Dirençli</item>
+        <item>Üç Cihaz İçin Geçerli</item>
+    </string-array>
+    <string-array name="referral_promotion_list">
+        <item>Eğer bir arkadaşınız sizinle referans kodunu paylaştıysa, o kodu buraya girerek ödeme sonrası bir ay ücretsiz Lantern Pro üyeliği kazanın.</item>
+    </string-array>
+    <string-array name="referral_promotion_list_two_year">
+        <item>Eğer bir arkadaşınız sizinle referans kodunu paylaştıysa, o kodu buraya girerek ödeme sonrası üç ay ücretsiz Lantern Pro üyeliği kazanın.</item>
+    </string-array>
+</resources>

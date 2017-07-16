@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="authorize_device_list">
+        <item>أدخل الكود أعلاه في شاشة \"منح إذن الجهاز لبرو\" في جهاز البرو.</item>
+    </string-array>
+    <string-array name="common_issue_list">
+        <item>لا يمكن الوصول إلى المواقع المحجوبة</item>
+        <item>لا يمكن إكمال العملية الشرائية</item>
+        <item>لا يمكن الدخول</item>
+        <item>العجلة تدور لا نهائيا</item>
+        <item>بطيء</item>
+        <item>آخر</item>
+    </string-array>
+    <string-array name="enter_code_steps_referral">
+        <item>أدخل كود التحقق الذي وصلك عبر الإيميل للمتابعة إلى برو</item>
+        <item>لم تتلقى كود؟ تحقق في ملف السبام للتأكد أنك أدخلت عنوان بريدك بطريقة صحيحة</item>
+    </string-array>
+    <string-array name="enter_email_list">
+        <item>أدخل عنوان بريدك الإلكتروني للسماح لهذا الجهاز لإستعمال الأشهر المجانية من لانترن برو months</item>
+        <item>سنرسل لك كود مصادقة عبر الإيميل</item>
+    </string-array>
+    <string-array name="pro_features">
+        <item>سرعة أعلى</item>
+        <item>داتا لامحدودة</item>
+        <item>مقاوم للحجب</item>
+        <item>ثلاثة أجهزة</item>
+    </string-array>
+    <string-array name="referral_promotion_list">
+        <item>إذا شارك صديق معك رمز إحالة أدخله للحصول على شهر مجاني من لانترن برو بعض الدفع</item>
+    </string-array>
+    <string-array name="referral_promotion_list_two_year">
+        <item>إذا شارك صديق معك رمز إحالة أدخله للحصول على شهر مجاني من لانترن برو بعض الدفع</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SwitchButtonMainStyle">
+        <item name="android:textColor">@color/ksw_md_back_color</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="kswThumbColor">@color/accent_white</item>
+        <item name="kswThumbWidth">45.0dip</item>
+        <item name="kswThumbHeight">45.0dip</item>
+        <item name="kswBackColor">@color/pro_blue_color</item>
+        <item name="kswTextOn">@string/on_text</item>
+        <item name="kswTextOff">@string/off_text</item>
+    </style>
+</resources>

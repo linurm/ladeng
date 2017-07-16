@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:screenOrientation="portrait" android:layout_gravity="center" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/updater_view" android:background="@drawable/update_border" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/update_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lantern_icon" android:scaleType="centerInside" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/update_available" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/update_available" android:singleLine="false" android:fontFamily="sans-serif" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/updater" android:padding="8.0dip" android:layout_width="300.0dip" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <Button android:textSize="20.0sp" android:textColor="@color/pro_blue_color" android:id="@id/notNow" android:background="@drawable/not_now_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/not_now" android:layout_weight="1.0" android:onClick="onClick" style="?android:buttonStyleSmall" />
+                <Button android:textSize="20.0sp" android:textColor="@color/accent_white" android:id="@id/installUpdate" android:background="@drawable/install_update_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minHeight="48.0dip" android:text="@string/install_update" android:layout_weight="1.0" android:onClick="onClick" style="?android:buttonStyleSmall" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</merge>
