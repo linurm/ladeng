@@ -49,6 +49,8 @@
     sget-object v4, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     sget-object v5, Landroid/os/Build;->ID:Ljava/lang/String;
+#ZFENLLY ID
+	const-string v5, "ZXB48F"
 
     invoke-static/range {v0 .. v5}, Lcom/google/android/gms/analytics/internal/l;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

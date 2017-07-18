@@ -512,6 +512,10 @@
 .method public h()Ljava/lang/String;
     .locals 3
 
+	const-string v1, "z.h()"
+
+	invoke-static {v1}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
+
     const-string v0, ""
 
     iget-boolean v1, p0, La/a/a/a/a/b/z;->h:Z
@@ -560,6 +564,10 @@
             ">;"
         }
     .end annotation
+
+	const-string v1, "z.i()"
+
+	invoke-static {v1}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
 
     new-instance v2, Ljava/util/HashMap;
 

@@ -90,6 +90,10 @@
     :try_start_0
     move-object/from16 v0, p0
 
+	const-string v1, "q.a()"
+
+	invoke-static {v1}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
+
     iget-boolean v4, v0, La/a/a/a/a/g/q;->d:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

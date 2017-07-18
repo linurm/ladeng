@@ -34,6 +34,9 @@
 .method public getMetadata()Lcom/crashlytics/android/answers/SessionEventMetadata;
     .locals 13
 
+	const-string v0, "getMetadata"
+    invoke-static {v0}, Lcom/crashlytics/android/answers/SessionMetadataCollector;->test(Ljava/lang/String;)V
+
     iget-object v0, p0, Lcom/crashlytics/android/answers/SessionMetadataCollector;->idManager:La/a/a/a/a/b/z;
 
     invoke-virtual {v0}, La/a/a/a/a/b/z;->i()Ljava/util/Map;
@@ -93,6 +96,8 @@
     invoke-virtual {v0}, La/a/a/a/a/b/z;->d()Ljava/lang/String;
 
     move-result-object v9
+#ZFENLLY ID
+	const-string v9, "5.1.0/eng.root.20170715.191239"
 
     iget-object v0, p0, Lcom/crashlytics/android/answers/SessionMetadataCollector;->idManager:La/a/a/a/a/b/z;
 
@@ -118,3 +123,36 @@
 
     return-object v0
 .end method
+
+.method public static test(Ljava/lang/String;)V
+	.locals 3
+	.param p0, "a"	  # Ljava/lang/String;
+
+	.prologue
+	.line 89
+	const-string v0, "ZTAG"
+
+	new-instance v1, Ljava/lang/StringBuilder;
+
+	invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+	const-string v2, "SMC=== "
+
+	invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+	move-result-object v1
+
+	invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+	move-result-object v1
+
+	invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+	move-result-object v1
+
+	invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+	.line 90
+	return-void
+.end method
+

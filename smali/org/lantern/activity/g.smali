@@ -278,7 +278,7 @@
     iget-object v0, p0, Lorg/lantern/activity/g;->q:Landroid/widget/ProgressBar;
 
     long-to-int v1, p1
-
+#zfenlly
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     goto :goto_0
@@ -2279,7 +2279,7 @@
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
-
+#zfenlly
     invoke-direct {p0, v0, v1, v2, v3}, Lorg/lantern/activity/g;->a(JJ)V
 
     :cond_0
