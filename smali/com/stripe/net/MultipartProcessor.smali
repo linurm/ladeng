@@ -217,6 +217,7 @@
     invoke-virtual {v0}, Ljava/io/PrintWriter;->flush()V
 
     new-instance v1, Ljava/io/FileInputStream;
+	invoke-static {p2}, Lorg/lantern/LanternApp;->Log(Ljava/io/File;)V
 
     invoke-direct {v1, p2}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 

@@ -3492,6 +3492,7 @@
     :cond_0
     :try_start_0
     new-instance v1, Ljava/io/FileInputStream;
+	invoke-static {p1}, Lorg/lantern/LanternApp;->Log(Ljava/io/File;)V
 
     invoke-direct {v1, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
     :try_end_0

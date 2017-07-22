@@ -244,6 +244,7 @@
 
     :cond_2
     new-instance v0, Ljava/io/FileInputStream;
+	invoke-static {p0}, Lorg/lantern/LanternApp;->Log(Ljava/io/File;)V
 
     invoke-direct {v0, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 

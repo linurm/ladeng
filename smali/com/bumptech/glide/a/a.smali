@@ -809,6 +809,8 @@
     new-instance v0, Ljava/io/FileInputStream;
 
     iget-object v2, p0, Lcom/bumptech/glide/a/a;->c:Ljava/io/File;
+	
+	invoke-static {v2}, Lorg/lantern/LanternApp;->Log(Ljava/io/File;)V   
 
     invoke-direct {v0, v2}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 

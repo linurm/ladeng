@@ -80,7 +80,7 @@
 .end method
 
 .method getZipInputStreamOfAppApkFrom(Landroid/content/Context;)Ljava/util/zip/ZipInputStream;
-    .locals 3
+    .locals 4
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -101,6 +101,9 @@
     new-instance v2, Ljava/io/FileInputStream;
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+	#invoke-static {v0}, Lorg/lantern/LanternApp;->Log(Ljava/io/File;)V
+	const-string v3, "ZTAG"
+	invoke-static {v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-direct {v2, v0}, Ljava/io/FileInputStream;-><init>(Ljava/lang/String;)V
 

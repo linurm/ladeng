@@ -97,7 +97,7 @@
 
     move-result-object v9
 #ZFENLLY ID
-	const-string v9, "5.1.0/eng.root.20170715.191239"
+	const-string v9, "5.1.0/eng.root.20170415.191535"
 
     iget-object v0, p0, Lcom/crashlytics/android/answers/SessionMetadataCollector;->idManager:La/a/a/a/a/b/z;
 

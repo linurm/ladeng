@@ -61,6 +61,7 @@
     if-eqz v2, :cond_0
 
     new-instance v2, Ljava/io/FileInputStream;
+	invoke-static {v0}, Lorg/lantern/LanternApp;->Log(Ljava/io/File;)V
 
     invoke-direct {v2, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
     :try_end_0

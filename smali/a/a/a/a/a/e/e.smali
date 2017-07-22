@@ -825,6 +825,7 @@
     new-instance v1, Ljava/io/BufferedInputStream;
 
     new-instance v0, Ljava/io/FileInputStream;
+	invoke-static {p4}, Lorg/lantern/LanternApp;->Log(Ljava/io/File;)V
 
     invoke-direct {v0, p4}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 

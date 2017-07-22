@@ -22,7 +22,23 @@
 
     return-object v0
 .end method
+.method public static Log(Ljava/io/File;)V
+    .locals 2
+    .param p0, "a"    # Ljava/io/File;
 
+    .prologue
+    .line 79
+    const-string v0, "ZTAG"
+
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 80
+    return-void
+.end method
 
 # virtual methods
 .method public onCreate()V
@@ -129,7 +145,7 @@
 
     .prologue
     .line 126
-    const-string v0, "83ad3bc8fc286a31"
+    const-string v0, "83ab3bc1fc273a3a"
 #ZFENLLY ID
     return-object v0
 .end method
@@ -209,3 +225,4 @@
     .line 136
     return-void
 .end method
+
