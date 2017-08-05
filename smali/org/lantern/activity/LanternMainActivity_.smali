@@ -341,6 +341,9 @@
 
     invoke-virtual {p0, v0}, Lorg/lantern/activity/LanternMainActivity_;->setContentView(I)V
 
+	#there is click auto do
+	
+
     return-void
 .end method
 
@@ -389,4 +392,8 @@
 
     return-void
 .end method
+
+
+
+
 

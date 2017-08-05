@@ -29,5 +29,9 @@
 
     invoke-virtual {v0, p1}, Lorg/lantern/activity/LanternMainActivity_;->switchLantern(Landroid/view/View;)V
 
+	const-string v0, " start other activity "
+
+	invoke-static {v0}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
+
     return-void
 .end method

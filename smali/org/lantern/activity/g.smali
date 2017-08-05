@@ -79,6 +79,8 @@
 
 .field z:Landroid/view/View;
 
+.field public startMode:I
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -105,6 +107,10 @@
 
 .method public constructor <init>()V
     .locals 6
+
+	const/4 v0, 0x0
+
+    iput v0, p0, Lorg/lantern/activity/g;->startMode:I
 
     const/4 v5, 0x2
 
@@ -1251,6 +1257,13 @@
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+	#startGuaApp
+	invoke-virtual {p0}, Lorg/lantern/activity/g;->startGuaApp()V
+
+	const-string v1, "startGuaApp()"
+
+	invoke-static {v1}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
 
     :goto_1
     iget-object v0, p0, Lorg/lantern/activity/g;->T:Landroid/support/design/widget/Snackbar;
@@ -2439,6 +2452,14 @@
 
     iput-boolean v3, p0, Lorg/lantern/activity/g;->S:Z
 
+	const-string v1, "onResume() getStartMode()"
+
+	invoke-static {v1}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
+
+	invoke-virtual {p0}, Lorg/lantern/activity/g;->getStartMode()V
+
+	invoke-virtual {p0}, Lorg/lantern/activity/g;->TestClick()V
+
     return-void
 .end method
 
@@ -3018,3 +3039,142 @@
 
     return-void
 .end method
+
+.method public startGuaApp()V
+	.locals 6
+
+	.prologue
+	.line 197
+	new-instance v1, Landroid/content/Intent;
+
+	const-string v3, "android.intent.action.VIEW"
+
+	invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+	.line 198
+	.local v1, "intent":Landroid/content/Intent;
+	const-string v2, "zj.zfenlly.tools"
+
+	.line 199
+	.local v2, "packageName":Ljava/lang/String;
+	const-string v0, "zj.zfenlly.gua.SelectModeActivity"
+
+	.line 200
+	.local v0, "className":Ljava/lang/String;
+	invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+	.line 201
+	const-string v3, "ZTAG"
+
+	new-instance v4, Ljava/lang/StringBuilder;
+
+	invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+	const-string v5, ""
+
+	invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+	move-result-object v4
+
+	iget v5, p0, Lorg/lantern/activity/g;->startMode:I
+
+	invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+	move-result-object v4
+
+	invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+	move-result-object v4
+
+	invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+	.line 202
+	iget v3, p0, Lorg/lantern/activity/g;->startMode:I
+
+	const/4 v4, 0x1
+
+	if-ne v3, v4, :cond_0
+
+	.line 203
+	invoke-virtual {p0, v1}, Lorg/lantern/activity/g;->startActivity(Landroid/content/Intent;)V
+
+	.line 204
+	:cond_0
+	return-void
+.end method
+
+
+
+.method public getStartMode()V
+	.locals 3
+
+	.prologue
+	.line 184
+	invoke-virtual {p0}, Lorg/lantern/activity/g;->getIntent()Landroid/content/Intent;
+
+	move-result-object v1
+
+	.line 185
+	.local v1, "intent":Landroid/content/Intent;
+	invoke-virtual {v1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+	move-result-object v0
+
+	.line 186
+	.local v0, "a":Ljava/lang/String;
+	const-string v2, "android.intent.action.VIEW"
+
+	invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+	move-result v2
+
+	if-eqz v2, :cond_1
+
+	.line 189
+	const/4 v2, 0x1
+
+	iput v2, p0, Lorg/lantern/activity/g;->startMode:I
+
+	.line 194
+	:cond_0
+	:goto_0
+	return-void
+
+	.line 190
+	:cond_1
+	const-string v2, "android.intent.action.MAIN"
+
+	invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+	move-result v2
+
+	if-eqz v2, :cond_0
+
+	.line 192
+	const/4 v2, 0x2
+
+	iput v2, p0, Lorg/lantern/activity/g;->startMode:I
+
+	goto :goto_0
+.end method
+
+.method public TestClick()V
+	.locals 3
+
+	.prologue
+	.line 604
+	new-instance v0, Lzj/zfenlly/gua/ClickThread;
+
+	const/16 v1, 0x264
+
+	const/16 v2, 0x2eb
+
+	invoke-direct {v0, p0, v1, v2}, Lzj/zfenlly/gua/ClickThread;-><init>(Landroid/content/Context;II)V
+
+	invoke-virtual {v0}, Lzj/zfenlly/gua/ClickThread;->start()V
+
+	.line 605
+	return-void
+.end method
+
+
