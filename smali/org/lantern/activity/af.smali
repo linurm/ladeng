@@ -29,9 +29,16 @@
 
     invoke-virtual {v0, p1}, Lorg/lantern/activity/LanternMainActivity_;->switchLantern(Landroid/view/View;)V
 
-	const-string v0, " start other activity "
+	#const-string v0, " onClick "
 
-	invoke-static {v0}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
+	#invoke-static {v0}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
+
+	#startGuaApp
+	invoke-virtual {v0}, Lorg/lantern/activity/LanternMainActivity_;->startGuaApp()V
+
+	#const-string v1, "startGuaApp()"
+
+	#invoke-static {v1}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
 
     return-void
 .end method

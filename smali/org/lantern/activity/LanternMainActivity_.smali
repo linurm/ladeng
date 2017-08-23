@@ -393,6 +393,12 @@
     return-void
 .end method
 
+.method public startGuaApp()V
+	.locals 0
+	invoke-super {p0}, Lorg/lantern/activity/g;->startGuaApp()V
+	
+	return-void
+.end method
 
 
 

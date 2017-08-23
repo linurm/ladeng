@@ -1259,11 +1259,11 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
 	#startGuaApp
-	invoke-virtual {p0}, Lorg/lantern/activity/g;->startGuaApp()V
+	#invoke-virtual {p0}, Lorg/lantern/activity/g;->startGuaApp()V
 
-	const-string v1, "startGuaApp()"
+	#const-string v1, "startGuaApp()"
 
-	invoke-static {v1}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
+	#invoke-static {v1}, La/a/a/a/a/b/z;->test(Ljava/lang/String;)V
 
     :goto_1
     iget-object v0, p0, Lorg/lantern/activity/g;->T:Landroid/support/design/widget/Snackbar;
@@ -3040,68 +3040,55 @@
     return-void
 .end method
 
+
 .method public startGuaApp()V
+	.locals 4
+
+	.prologue
+	.line 18
+	new-instance v0, Landroid/os/Handler;
+
+	invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+
+	new-instance v1, Lorg/lantern/activity/g$1;
+
+	invoke-direct {v1, p0}, Lorg/lantern/activity/g$1;-><init>(Lorg/lantern/activity/g;)V
+
+	const-wide/16 v2, 0x1388
+
+	invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+	.line 30
+	return-void
+.end method
+
+
+
+.method public TestClick()V
 	.locals 6
 
 	.prologue
-	.line 197
-	new-instance v1, Landroid/content/Intent;
+	.line 33
+	move-object v0, p0
 
-	const-string v3, "android.intent.action.VIEW"
+	.line 35
+	.local v0, "mActivity":Landroid/app/Activity;
+	new-instance v1, Landroid/os/Handler;
 
-	invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+	invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-	.line 198
-	.local v1, "intent":Landroid/content/Intent;
-	const-string v2, "zj.zfenlly.tools"
+	new-instance v2, Lorg/lantern/activity/g$2;
 
-	.line 199
-	.local v2, "packageName":Ljava/lang/String;
-	const-string v0, "zj.zfenlly.gua.SelectModeActivity"
+	invoke-direct {v2, p0, v0}, Lorg/lantern/activity/g$2;-><init>(Lorg/lantern/activity/g;Landroid/app/Activity;)V
 
-	.line 200
-	.local v0, "className":Ljava/lang/String;
-	invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+	const-wide/16 v4, 0xbb8
 
-	.line 201
-	const-string v3, "ZTAG"
+	invoke-virtual {v1, v2, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-	new-instance v4, Ljava/lang/StringBuilder;
-
-	invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-	const-string v5, ""
-
-	invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-	move-result-object v4
-
-	iget v5, p0, Lorg/lantern/activity/g;->startMode:I
-
-	invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-	move-result-object v4
-
-	invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-	move-result-object v4
-
-	invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-	.line 202
-	iget v3, p0, Lorg/lantern/activity/g;->startMode:I
-
-	const/4 v4, 0x1
-
-	if-ne v3, v4, :cond_0
-
-	.line 203
-	invoke-virtual {p0, v1}, Lorg/lantern/activity/g;->startActivity(Landroid/content/Intent;)V
-
-	.line 204
-	:cond_0
+	.line 41
 	return-void
 .end method
+
 
 
 
@@ -3158,23 +3145,5 @@
 	goto :goto_0
 .end method
 
-.method public TestClick()V
-	.locals 3
-
-	.prologue
-	.line 604
-	new-instance v0, Lzj/zfenlly/gua/ClickThread;
-
-	const/16 v1, 0x264
-
-	const/16 v2, 0x2eb
-
-	invoke-direct {v0, p0, v1, v2}, Lzj/zfenlly/gua/ClickThread;-><init>(Landroid/content/Context;II)V
-
-	invoke-virtual {v0}, Lzj/zfenlly/gua/ClickThread;->start()V
-
-	.line 605
-	return-void
-.end method
 
 
